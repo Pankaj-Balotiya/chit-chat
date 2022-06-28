@@ -85,6 +85,10 @@ io.on('connection', (socket)=> {
 
 })
 
+app.get('/',(req, res) => {
+  res.send('ChitChat Backend');
+})
+
 
 app.get('/rooms', (req, res)=> {
   res.json(rooms)
