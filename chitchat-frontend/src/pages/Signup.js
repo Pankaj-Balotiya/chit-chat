@@ -3,7 +3,7 @@ import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { useSignupUserMutation } from "../services/appApi";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
-import botImg from "../assets/dp.jpg";
+import dp from "../assets/dp.jpg";
 
 function Signup() {
     const [email, setEmail] = useState("");
@@ -66,7 +66,7 @@ function Signup() {
                     <Form style={{ width: "80%", maxWidth: 500 }} onSubmit={handleSignup}>
                         <h1 className="text-center">Create account</h1>
                         <div className="signup-profile-pic__container">
-                            <img src={imagePreview || botImg} className="signup-profile-pic" />
+                            <img src={imagePreview || dp} className="signup-profile-pic" />
                             <label htmlFor="image-upload" className="image-upload-label">
                                 <i className="fas fa-plus-circle add-picture-icon"></i>
                             </label>
